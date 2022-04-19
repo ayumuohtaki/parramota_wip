@@ -148,3 +148,39 @@ jQuery(window).scroll(function (){
 jQuery('.zoomInClickTrigger').on('click', function() {
   $(this).addClass('zoomIn');
 })
+
+
+
+jQuery(window).scroll(function (){
+  jQuery('.right').each(function(){
+      var elemPos = $(this).offset().top-1;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+  if (scroll >= elemPos - windowHeight){
+      $(this).addClass('fadeRight');
+      }else{
+      $(this).removeClass('fadeRight');
+      }    });
+});
+jQuery(window).scroll(function (){
+  jQuery('.left').each(function(){
+      var elemPos = $(this).offset().top-1;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+  if (scroll >= elemPos - windowHeight){
+      $(this).addClass('fadeLeft');
+      }else{
+      $(this).removeClass('fadeLeft');
+      }    });
+});
+jQuery(window).on('load', function (){
+  jQuery('.career').each(function(){
+      var elemPos = $(this).offset().top-1;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+  if (scroll >= elemPos - windowHeight){
+      $(this).addClass('fadeIn');
+      }else{
+      $(this).removeClass('fadeIn');
+      }    });
+});

@@ -2,6 +2,7 @@
 <?php get_header(); ?>
 
    <div id="scroll-cover">
+   
     <section class="section-contents" id="blog">
       <div class="wrapper">
 <?php $term_obj = get_term_by( 'slug', 'blog', 'category' ); ?>

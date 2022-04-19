@@ -1498,6 +1498,7 @@ input {
  height: 100vh;
  position: relative;
  align-items: flex-start;
+
 }
 .head-logo-before {
 	filter: grayscale(100%);
@@ -1505,6 +1506,7 @@ input {
 .head-logo img{
  width: 50%;
 	position: fixed;
+	margin-top: 70px;
 }
 .head-logo-small  img{
 	width: 10%;
@@ -2381,6 +2383,9 @@ input {
 		#pg-newsDetail .news .title {
 			font-size: 1.5rem;
 		}
+		#pg-newsDetail .main-container .main-wrapper {
+			margin: 0 8px;
+		}
 	}
 	 
 /* @media screen and (max-width: 769px) {
@@ -2530,7 +2535,6 @@ input {
 	font-style: italic;
 }
 .page-contents .page-head .wrapper .page-title {
-	margin-top: 30px;
 	font-size: 3.8rem;
 	font-family: 'Bangers', sans-serif;
 	font-weight: 400;
@@ -2696,7 +2700,7 @@ input {
  * -------------------------------- */
 @media screen and (max-width: 769px) {
 	.page-contents .page-container {
-		padding: 6.7% 4% 0;
+		padding: 6.7% 0% 0;
 	}
 	#pg-privacy .basic-box {
 		margin-top: 7.4%;
@@ -3002,6 +3006,11 @@ input {
 }
 .section-contents .section-buttons {
 	margin-top: 6.25%;
+	align-items: center;
+}
+.section-buttons img {
+	width: 50px;
+	margin-right: 10px;
 }
 
 /* --------------------------------
@@ -3009,7 +3018,7 @@ input {
  * -------------------------------- */
 @media screen and (max-width: 769px) {
 	.section-contents {
-		padding: 40px 4% 60px;
+		padding: 40px 0% 60px;
 	}
 	.section-contents .section-title-en {
 		font-size: 1.65rem;
@@ -4257,7 +4266,7 @@ input[type="submit"]::after {
 	}	
 	/* ぱんくず */
 	.bread_crumb {
-	    padding: 0;
+	    padding-left: 5px;
 	}
 }
 
@@ -4417,5 +4426,179 @@ input[type="submit"]::after {
 	.single-daily_contribution .more-news .next .another-link::after {
 		width: 30px;
 		background-image: url('../images/svg/icon-next-short.svg');
+	}
+}
+
+.link {
+	display: flex;
+	width: 30%;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+@media  (max-width: 769px) {
+	.link {
+		
+		width: 50%;
+	}}
+
+.blogmura {
+	width: 32.5%;
+}
+.uniik {
+	width: 35%;
+	margin: 0 10px;
+	
+}
+.instagram {
+	width: 32.5%;
+	
+}
+
+.career {
+	width: 100%;
+	margin-top: 50px;
+	align-items: center;
+	background-image: url('../images/common/nozawa.jpg');
+	background-size: cover;
+
+}
+.career-text {
+	padding: 300px 0;
+}
+
+
+.private h2  {
+	font-family: "Bangers";
+	text-align: center;
+	font-size: 40px;
+	padding-top: 10vh;
+}
+@media  (max-width: 769px) {
+	.private h2 {
+	 font-size: 30px;
+	}}
+
+.private-contents {
+	display: flex;
+	width: 100%;
+	padding: 5vh 0;
+	align-items: center;
+}
+@media  (max-width: 769px) {
+	.private-contents {
+	 padding: 2vh 0;
+	}}
+.profile-text {
+	width: 50%;
+	height: 100%;
+	vertical-align: middle;
+	
+}
+.profile-text p {
+	font-size: 15px;
+	text-align: center;
+	padding-top: 1vh;	
+	
+}
+@media  (max-width: 769px) {
+	.profile-text p {
+		
+		font-size: 1px;
+	}
+	.sp-none {
+		display: none;
+}}
+.career-text h2{
+	font-family:'ヒラギノ丸ゴ ProN' ;
+	font-size: 30px;
+	text-align: center;
+}
+@media  (max-width: 769px) {
+	.career-text h2 {
+	 font-size: 20px;
+	}}
+
+.career-text p {
+	font-size: 15px;
+	text-align: center;
+	padding-top: 1vh;	
+	
+}
+@media  (max-width: 769px) {
+	.career-text p {
+		
+		font-size: 1px;
+	}
+	.sp-none {
+		display: none;
+}}
+.profile-text h3{
+	text-align: center;
+	font-family: 'Marker Felt' , 'ヒラギノ丸ゴ ProN';
+	font-size: 30px;
+	top: 0;
+}
+@media  (max-width: 769px) {
+	.profile-text h3 {
+		font-size: 20px;
+}}
+
+.private-contents img {
+	width: 50%;
+}
+
+
+/* --------------------------------
+ * Jquery
+ * -------------------------------- */
+ .fadeRight{
+	 animation-name: fadeRightAnime;
+	 animation-duration: 2s;
+	 animation-fill-mode: forwarda;
+	 opacity: 1;
+ }
+ @keyframes fadeRightAnime{
+	 from {
+		 opacity: 0;
+		 transform: translateX(100px);
+	 }
+	 to {
+		 opacity: 1;
+		 transform: translateX(0);
+	 }
+ }
+
+ .fadeLeft{
+	animation-name: fadeLeftAnime;
+	animation-duration: 2s;
+	animation-fill-mode: forwarda;
+	opacity: 1;
+}
+@keyframes fadeLeftAnime{
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeIn{
+	animation-name: fadeInAnime;
+	animation-duration: 5s;
+	animation-fill-mode: forwarda;
+	opacity: 1;
+}
+@keyframes fadeInAnime{
+	from {
+		opacity: 0;
+		
+	}
+	to {
+		opacity: 1;
+	
 	}
 }
