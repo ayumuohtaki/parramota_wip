@@ -6,7 +6,7 @@
     <section class="section-contents" id="blog">
       <div class="wrapper">
 <?php $term_obj = get_term_by( 'slug', 'blog', 'category' ); ?>
-        <span class="section-title-en"><?php the_field( 'english_title', $term_obj->taxonomy. '_'. $term_obj->term_id ); ?></span>
+        <!-- <span class="section-title-en"><?php the_field( 'english_title', $term_obj->taxonomy. '_'. $term_obj->term_id ); ?></span> -->
         <h2 class="section-title"><?php echo $term_obj->name; ?></h2>
         <p class="section-lead"><?php echo $term_obj->description; ?></p>
         <ul class="news-front">
