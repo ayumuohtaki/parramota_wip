@@ -159,7 +159,7 @@ function theme_widgets_init() {
 }
 add_action( 'widgets_init', 'theme_widgets_init' );
 
-//メイン画像上にテンプレートごとの英語タイトルを表示
+//メイン画像上にテンプレートごとの英語タイトルを表示 22.04.20現在稼働していません
 function get_main_en_title() {
     if ( is_category() ):
         $term_obj = get_queried_object();
