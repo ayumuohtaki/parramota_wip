@@ -1547,6 +1547,7 @@ input {
 }
 #header .global-nav .menu-item .nav-link {
 	padding-bottom: 8px;
+	font-family: 'Vollkorn';
 	font-size: 1.4rem;
 	color: #fff;
 	position: relative;
