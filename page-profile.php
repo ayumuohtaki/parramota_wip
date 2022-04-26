@@ -117,7 +117,7 @@
                   <div class="link">
                             <a href="https://blogmura.com/ranking/in?p_cid=11065693" target="_blank" class="blogmura"><img src="https://b.blogmura.com/logo-blogmura-circle.svg" width="40" height="40" border="0" alt="ブログランキング・にほんブログ村へ" /></a>
                             <a href="https://m.uniik.me/user/207488684960817850?utm_source=Uniik&utm_medium=more&utm_campaign=207488684960817850" class="uniik"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/u-logo.png" alt="PARRAMOTA~30minutes~"></a>
-                            <a href="https://www.instagram.com/parramota.30minutes/" class="instagram"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/instagram.png" alt="insta"></a>
+                            <a href="https://www.instagram.com/parramota.30minutes/" class="instagram"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/Instagram.png" alt="insta"></a>
                   </div>
                   </div>
               </div>
