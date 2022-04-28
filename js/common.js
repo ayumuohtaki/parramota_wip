@@ -146,7 +146,7 @@ jQuery(window).scroll(function (){
 });
 
 jQuery('.zoomInClickTrigger').on('click', function() {
-  $(this).addClass('zoomIn');
+  $(this).addClass('rotateLeftZ');
 })
 
 

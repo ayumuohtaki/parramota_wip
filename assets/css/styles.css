@@ -4602,3 +4602,31 @@ input[type="submit"]::after {
 	
 	}
 }
+.zoomIn {
+	animation-name: zoomInAnime;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+}
+@keyframes zoomInAnime{
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(3);
+	}
+}
+
+.rotateLeftZ{
+	animation-name: rotateLeftZAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes rotateLeftZAnime {
+	from{
+		transform: rotateZ(0);
+	}
+	to{
+		transform: rotateZ(-360deg);
+	}
+}
