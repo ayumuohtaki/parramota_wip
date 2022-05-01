@@ -3443,8 +3443,7 @@ input {
 	-webkit-transition: all 0.3s ease 0.2s;
 	transition: all 0.3s ease 0.2s;
 	z-index: 1;
-	background: -webkit-linear-gradient(left, #494544, #c41a30);
-	background: linear-gradient(to right,#494544, #c41a30 );
+	background: #c41a30;
 }
 .button-ghost::after {
 	content: '';
@@ -3453,14 +3452,13 @@ input {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: -webkit-linear-gradient(right,#494544, #c41a30);
-	background: linear-gradient(to left, #494544, #c41a30);
+	background: #c41a30;
 	z-index: -1;
-	opacity: 0;
+	
 	cursor: pointer;
 }
 .button-ghost:hover {
-	border: 1px solid transparent;
+	
 	background: transparent;
 	color: #fff;
 	cursor: pointer;
@@ -4410,19 +4408,20 @@ input[type="submit"]::after {
 	 padding-left: 3rem;
  }
  #nf-field-8  {
-	 justify-content: center;
+	 text-align: center;
  }
  .nf-field-element {
-	 width: 100%;
-	 margin: 0 auto;
+	 text-align: center;
  }
+
  .ninja-forms-field {
 	 margin: 0 auto;
  }
 .nf-form-fields-required {
 	padding-left: 3rem;
 }
- * Jquery
+/*--------------------------------
+ * Jquery 
  * -------------------------------- */
  .fadeRight{
 	 animation-name: fadeRightAnime;
@@ -4484,21 +4483,56 @@ input[type="submit"]::after {
 		transform: scale(1);
 	}
 	to {
-		transform: scale(3);
+		transform: scale(1.5);
 	}
 }
 
-.rotateLeftZ{
-	animation-name: rotateLeftZAnime;
+.zoomOut {
+	animation-name: zoomOutAnime;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+}
+@keyframes zoomOutAnime{
+	from {
+		transform: scale(1.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.zoomIn2{
+	animation-name: zoomIn2Anime;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 
 }
-@keyframes rotateLeftZAnime {
+@keyframes zoomIn2Anime {
 	from{
-		transform: rotateZ(0);
+		transform: scale(1.5);
 	}
 	to{
-		transform: rotateZ(-360deg);
+		transform: scale(2);
+		
+	}
+}
+
+.fadeUp2 {
+	animation-name: fadeUpAnime;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes fadeUpAnime {
+	from {
+		
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		
+		transform: translateY(-100px);
+		opacity: 0.5;
 	}
 }

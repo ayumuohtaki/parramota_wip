@@ -145,10 +145,30 @@ jQuery(window).scroll(function (){
       }    });
 });
 
+
 jQuery('.zoomInClickTrigger').on('click', function() {
-  $(this).addClass('rotateLeftZ');
+  $(this).addClass('zoomIn2');
 })
 
+jQuery('.news-item').on('click', function() {
+  $(this).addClass('fadeUp2');
+})
+
+
+jQuery('.zoomInClickTrigger').on('mouseenter', function() {
+  $(this).addClass('zoomIn');
+})
+jQuery('.zoomInClickTrigger').on('mouseenter', function() {
+  $(this).removeClass('zoomOut');
+})
+
+
+jQuery('.zoomInClickTrigger').on('mouseleave', function() {
+  $(this).addClass('zoomOut');
+})
+jQuery('.zoomInClickTrigger').on('mouseleave', function() {
+  $(this).removeClass('zoomIn');
+})
 
 
 jQuery(window).scroll(function (){

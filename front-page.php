@@ -34,7 +34,7 @@ endif;
 ?>
           
         </ul>
-        <div class="section-buttons animate__animated animate__pulse count10">
+        <div class="section-buttons animate__animated animate__pulse animate__infinite">
           <button type="button" class="button button-ghost zoomInClickTrigger" onclick="javascript:location.href = '<?php echo esc_url( get_term_link( $term_obj ) ); ?>';"><?php echo $term_obj->name; ?>一覧を見る</button>
         </div>
       </div>

@@ -28,7 +28,8 @@
 
   gtag('config', 'G-Y9X534903P');
 </script>
-  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5083323348437783"
+     crossorigin="anonymous"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
