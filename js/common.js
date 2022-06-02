@@ -168,7 +168,7 @@ jQuery('.zoomInClickTrigger').on('mouseleave', function() {
 })
 jQuery('.zoomInClickTrigger').on('mouseleave', function() {
   $(this).removeClass('zoomIn');
-})
+});
 
 
 jQuery(window).scroll(function (){

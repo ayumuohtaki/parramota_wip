@@ -4351,7 +4351,7 @@ input[type="submit"]::after {
 @media  (max-width: 769px) {
 	.profile-text p {
 		
-		font-size: 1px;
+		font-size: 10px;
 	}
 	.sp-none {
 		display: none;
@@ -4375,7 +4375,7 @@ input[type="submit"]::after {
 @media  (max-width: 769px) {
 	.career-text p {
 		
-		font-size: 1px;
+		font-size: 10px;
 	}
 	.sp-none {
 		display: none;
